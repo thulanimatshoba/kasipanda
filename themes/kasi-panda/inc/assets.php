@@ -134,6 +134,11 @@ add_action( 'wp_enqueue_scripts', 'kasi_panda_scripts' );
 
 /** Thulani Matshoba **/
 
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
 
 /*
      *      Header image
@@ -760,7 +765,7 @@ function my_loginbackground()
 {
     echo '<style type="text/css">
     body.login {
-    background-image: url(' . get_template_directory_uri() . '/home-parallax1.jpg) !important;
+    background-image: url(' . get_template_directory_uri() . '/home-parallax.jpeg) !important;
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 85%;
