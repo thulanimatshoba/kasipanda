@@ -968,3 +968,13 @@ header#masthead {
 .woocommerce-product-gallery__image {
     border: 1px solid #42b773;
 }
+
+
+footer#colophon {
+	background: grey;
+	padding: 10px;
+}
+
+footer#colophon a {
+	color: white !important;
+}
