@@ -35,3 +35,28 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+* Adding Carbon_Fields
+**/
+
+use Carbon_Fields\Container;
+use Carbon_Fields\Field;
+
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+function crb_attach_theme_options() {
+	Container::make('post_meta', 'Custom Page Options')
+	->show_on_post_type('page')
+	->add_fields(array(
+		Field::make('color', 'crb_title_color'),
+    Field::make('image', 'crb_thumb'),
+		Field::make( 'text', 'crb_city_and_post', 'City and post code' ),
+		Field::make( 'text', 'crb_street', 'Street Name' ),
+	));
+}
+
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once( 'vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
