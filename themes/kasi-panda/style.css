@@ -929,6 +929,8 @@ header#masthead {
     background: #fff;
 }
 
+/** Navigation **/
+
 .main-navigation li a:after {
     content: '';
     position: absolute;
@@ -940,7 +942,6 @@ header#masthead {
     -webkit-transform: translateX(-50%);
     left: 50%;
     bottom: 49px;
-    /* transition: width 0.35s ease; */
     transition: all 0.4s ease-in-out 0s;
     -o-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
@@ -959,6 +960,22 @@ header#masthead {
     width: 100%;
 }
 
+/** Slider **/
+
+.home-slider .caption {
+    position: relative !important;
+    text-align: center;
+    background: transparent !important;
+    color: red !important;
+    bottom: 210px !important;
+}
+
+.home-slider ul.slides img {
+    width: 100%;
+}
+
+/** Woocommerce **/
+
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
     border-radius: 0px !important;
     color: #fff !important;
@@ -969,6 +986,9 @@ header#masthead {
     border: 1px solid #42b773;
 }
 
+
+
+/** Footer **/
 
 footer#colophon {
 	background: grey;

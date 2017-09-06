@@ -21,11 +21,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main uk-container uk-container-center uk-margin-large-bottom">
 			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'home' );
-
-			endwhile; // End of the loop.
+  			while ( have_posts() ) : the_post();
+  				get_template_part( 'template-parts/content', 'home' );
+  			endwhile; // End of the loop.
 			?>
 		</main><!-- #main -->
 
@@ -49,7 +47,7 @@ get_header(); ?>
                                     <?php edit_post_link(); ?>
                                     <?php wp_link_pages(); ?>
                                 </div>
-                            </div><!--end entry-->
+                            </div>
                         </div>
                     <?php endforeach;
                 }

@@ -94,6 +94,17 @@ add_action( 'after_setup_theme', 'kasi_panda_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function kasi_panda_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home Page Slider', 'kasi-panda' ),
+		'id'            => 'home-slider',
+		'description'   => esc_html__( 'Add widgets here.', 'kasi-panda' ),
+		'before_widget' => '<section id="%1$s" class="uk-width-1-1 widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'kasi-panda' ),
 		'id'            => 'sidebar-1',
@@ -103,6 +114,8 @@ function kasi_panda_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+
 }
 add_action( 'widgets_init', 'kasi_panda_widgets_init' );
 

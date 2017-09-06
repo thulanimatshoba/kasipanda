@@ -15,16 +15,11 @@
 
 <footer id="colophon" class="site-footer">
     <div class="site-info uk-container">
-        <a class="uk-float-left" href="<?php echo esc_url(__('https://kasipanda.co.za/', 'kasi-panda')); ?>"><?php
-            /* translators: %s: CMS name, i.e. WordPress. */
-            printf(esc_html__('All rights reserved	&copy; 2017 %s', 'kasi-panda'), 'Kasi Panda');
-            ?></a>
+        <a class="uk-float-left" href="<?php echo esc_url(__('https://kasipanda.co.za/', 'kasi-panda')); ?>"><?php  printf(esc_html__('All rights reserved	&copy; 2017 %s', 'kasi-panda'), 'Kasi Panda'); ?>
+        </a>
         <span class="uk-float-right">
-			<?php
-            /* translators: 1: Theme name, 2: Theme author. */
-            printf(esc_html__('Developed by %2$s', 'kasi-panda'), 'kasi-panda', '<a href="http://thulanimatshoba.co.za">Thulani Matshoba</a>');
-            ?>
-            </span>
+			<?php printf(esc_html__('Developed by %2$s', 'kasi-panda'), 'kasi-panda', '<a href="http://thulanimatshoba.co.za">Thulani Matshoba</a>'); ?>
+        </span>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
