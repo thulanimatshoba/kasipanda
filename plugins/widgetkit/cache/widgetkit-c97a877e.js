@@ -1,0 +1,1 @@
+var widgetkitajax="http://local.kasipanda.co.za/wp-admin/admin-ajax.php?action=widgetkit&ajax=1";

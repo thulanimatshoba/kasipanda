@@ -1,0 +1,1 @@
+var widgetkitajax="http://local.divascollection.co.za/wp-admin/admin-ajax.php?action=widgetkit&ajax=1";
