@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*CSS front page*/
+
+.wcps-container {
+	background:none repeat scroll 0 0 rgb(241, 241, 241);
+  margin: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.wcps-container div.wcps-ribbon {
+  box-shadow: 0 2px 4px -1px rgb(51, 51, 51);
+  height: 24px;
+  left: -27px;
+  position: absolute;
+  top: 14px;
+  transform: rotate(-50deg);
+  width: 90px;
+  z-index: 10;
+}
+
+
+
+
+.wcps-container div.wcps-ribbon.wcps-ribbon-none{
+background:url("ribbons/none.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+display:none !important;
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-free{
+background:url("ribbons/free.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-save{
+background:url("ribbons/save.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-hot{
+background:url("ribbons/hot.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-pro{
+background:url("ribbons/pro.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-best{
+background:url("ribbons/best.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-gift{
+background:url("ribbons/gift.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-sale{
+background:url("ribbons/sale.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-new{
+background:url("ribbons/new.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-top{
+background:url("ribbons/top.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-fresh{
+background:url("ribbons/fresh.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-10{
+background:url("ribbons/dis-10.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-20{
+background:url("ribbons/dis-20.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-30{
+background:url("ribbons/dis-30.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-40{
+background:url("ribbons/dis-40.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-50{
+background:url("ribbons/dis-50.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-60{
+background:url("ribbons/dis-60.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-70{
+background:url("ribbons/dis-70.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-80{
+background:url("ribbons/dis-80.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-90{
+background:url("ribbons/dis-90.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.wcps-container div.wcps-ribbon.wcps-ribbon-dis-100{
+background:url("ribbons/dis-100.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+
+/* Navigation CSS middle */
+
+.wcps-container .owl-buttons.middle {
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+
+.wcps-container .owl-controls .owl-buttons.middle .owl-prev {
+  background: url("images/arrow-prev.png") no-repeat scroll 10px 14px rgba(0, 0, 0, 0);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  left: -100px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+
+  width: 50px;
+  transition: all 0.6s ease 0s;
+}
+
+.wcps-container .owl-controls .owl-buttons.middle .owl-next {
+  background: url("images/arrow-next.png") no-repeat scroll 10px 14px rgba(0, 0, 0, 0);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  padding: 0;
+  position: absolute;
+  right: -100px;
+  top: 0;
+
+  width: 50px;
+  transition: all 0.6s ease 0s;
+}
+
+
+.wcps-container:hover .owl-controls .owl-buttons.middle .owl-prev,
+.wcps-container:hover .owl-controls .owl-buttons.middle .owl-next {
+  box-shadow: 0 0 8px 0 rgb(102, 102, 102);
+}
+
+
+.wcps-container:hover .owl-controls .owl-buttons.middle .owl-prev {
+left: 30px;
+}
+
+.wcps-container:hover .owl-controls .owl-buttons.middle .owl-next {
+right: 30px;
+}
+
+
+
+
+/*#####################################*/
+
+
+
+.wcps-container .owl-buttons.middle-fixed {
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+
+.wcps-container .owl-controls .owl-buttons.middle-fixed .owl-prev {
+  background: url("images/arrow-prev.png") no-repeat scroll 10px 14px rgba(0, 0, 0, 0);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  left: -50px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+
+  width: 50px;
+  transition: all 0.6s ease 0s;
+}
+
+.wcps-container .owl-controls .owl-buttons.middle-fixed .owl-next {
+  background: url("images/arrow-next.png") no-repeat scroll 10px 14px rgba(0, 0, 0, 0);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  padding: 0;
+  position: absolute;
+  right: -50px;
+  top: 0;
+
+  width: 50px;
+  transition: all 0.6s ease 0s;
+}
+
+
+.wcps-container:hover .owl-controls .owl-buttons.middle-fixed .owl-prev,
+.wcps-container:hover .owl-controls .owl-buttons.middle-fixed .owl-next {
+  box-shadow: 0 0 8px 0 rgb(102, 102, 102);
+}
+
+
+.wcps-container:hover .owl-controls .owl-buttons.middle-fixed .owl-prev {
+left: -50px;
+}
+
+.wcps-container:hover .owl-controls .owl-buttons.middle-fixed .owl-next {
+right: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation CSS topright*/
+.wcps-container .owl-buttons.topright  {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.wcps-container .owl-controls .owl-buttons.topright .owl-prev {
+  background: url("images/arrow-prev.png") repeat scroll 0 0 rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 0;
+  color: rgb(0, 0, 0);
+  height: 20px;
+  padding: 0;
+  opacity: 1;
+  width: 30px;
+}
+
+
+
+.wcps-container .owl-controls .owl-buttons.topright .owl-next {
+  background: url("images/arrow-next.png") repeat scroll 0 0 rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 0;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  width: 30px;
+  opacity: 1;
+  height: 20px;
+}
+
+
+
+.wcps-container .owl-controls .owl-buttons.topright div.owl-prev:hover{
+	background-image: url("images/arrow-prev.png") ;
+	background-color:#d5d5d5 !important; }
+
+
+.wcps-container .owl-controls .owl-buttons.topright div.owl-next:hover{
+	background-image: url("images/arrow-next.png");
+	background-color:#d5d5d5 !important; }
+
+
+
+
+
+
+
+.wcps-container div.wcps-featured {
+  background: url("images/featured.png") no-repeat scroll 0 0 rgba(0, 0, 0,0);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  height: 32px;
+  left: 10px;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  width: 26px;
+}
+
+
+.wcps-container div.wcps-sale {
+  background: url("images/sale.png") no-repeat scroll 0 center rgb(241, 241, 241);
+  box-shadow: 0 1px 6px -3px rgb(153, 153, 153);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  height: 30px;
+  padding: 0;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  transform: rotate(45deg);
+  width: 90px;
+}
+
+
+
+
+
+
+

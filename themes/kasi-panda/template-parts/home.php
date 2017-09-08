@@ -19,7 +19,7 @@ get_header(); ?>
   </div>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main uk-container uk-container-center uk-margin-large-bottom">
+		<main id="main" class="site-main uk-container uk-container-center">
 			<?php
   			while ( have_posts() ) : the_post();
   				get_template_part( 'template-parts/content', 'home' );
@@ -33,21 +33,19 @@ get_header(); ?>
             <div class="uk-container-center uk-container uk-width-1-1">
                 <?php
             if (is_page()) {
-                $cat=get_cat_ID('About us'); //use page title to get a category ID
+                $cat=get_cat_ID('About'); //use page title to get a category ID
                 $posts = get_posts ("cat=$cat&showposts=1");
 
                 if ($posts) {
                     foreach ($posts as $post):
                         setup_postdata($post); ?>
                         <div class="article-content">
-                            <div class="entry clear">
                                 <div class="the-content uk-margin-large-top">
                                     <h1 class="uk-article-title uk-text-center uk-text-uppercase uk-margin-large-bottom"><?php the_title(); ?> </h1>
                                     <?php the_content(); ?>
                                     <?php edit_post_link(); ?>
                                     <?php wp_link_pages(); ?>
                                 </div>
-                            </div>
                         </div>
                     <?php endforeach;
                 }
@@ -57,26 +55,24 @@ get_header(); ?>
             </div>
         </div>
 
-    <div id="what-we-do" class="uk-width-1-1 uk-margin-large-bottom">
+    <div id="services" class="uk-width-1-1 uk-margin-large-bottom">
         <div class="uk-light uk-flex">
             <div class="uk-container-center uk-container">
             <?php
             if (is_page()) {
-                $cat=get_cat_ID('What we do'); //use page title to get a category ID
+                $cat=get_cat_ID('Services'); //use page title to get a category ID
                 $posts = get_posts ("cat=$cat&showposts=1");
 
                 if ($posts) {
                     foreach ($posts as $post):
                         setup_postdata($post); ?>
                         <div class="article-content">
-                            <div class="entry clear">
                                 <div class="the-content uk-margin-large-top">
                                     <h1 class="uk-article-title uk-text-center uk-text-uppercase"><?php the_title(); ?> </h1>
                                     <?php the_content(); ?>
                                     <?php edit_post_link(); ?>
                                     <?php wp_link_pages(); ?>
                                 </div>
-                            </div><!--end entry-->
                         </div>
                     <?php endforeach;
                 }
@@ -89,7 +85,7 @@ get_header(); ?>
         <div id="team" class="uk-width-1-1">
             <div class="uk-background-cover uk-light" uk-parallax="bgy: -200"
                  style="background-color: #2e2f30;">
-                <div class="uk-container-center uk-container uk-container-small">
+                <div class="uk-container">
                     <?php
                     if (is_page()) {
                         $cat=get_cat_ID('Team'); //use page title to get a category ID
@@ -99,13 +95,12 @@ get_header(); ?>
                             foreach ($posts as $post):
                                 setup_postdata($post); ?>
                                 <div class="article-content">
-                                    <div class="entry clear">
-                                        <div class="the-content uk-margin-small-top">
+                                        <div class="the-content uk-margin-large-top">
+                                            <h1 class="uk-article-title uk-text-center uk-text-uppercase"><?php the_title(); ?> </h1>
                                             <?php the_content(); ?>
                                             <?php edit_post_link(); ?>
                                             <?php wp_link_pages(); ?>
                                         </div>
-                                    </div><!--end entry-->
                                 </div>
                             <?php endforeach;
                         }
@@ -117,18 +112,17 @@ get_header(); ?>
         </div>
 
     <div id="contacts" class="uk-width-1-1">
-        <div class="uk-background-cover uk-light" uk-parallax="bgy: -200"
+        <div class="uk-background-cover" uk-parallax="bgy: -200"
              style="background-image: url('wp-content/themes/kasi-panda/img/contact-bg.jpg');">
-            <div class="uk-container-center uk-container">
+            <div class="uk-container">
             <?php
             if (is_page()) {
-                $cat=get_cat_ID('Contact us'); //use page title to get a category ID
+                $cat=get_cat_ID('Contact'); //use page title to get a category ID
                 $posts = get_posts ("cat=$cat&showposts=1");
 
                 if ($posts) {
                     foreach ($posts as $post):
                         setup_postdata($post); ?>
-                            <div class="entry clear">
                                 <div class="the-content uk-margin-large-top">
                                     <h1 class="uk-article-title uk-text-center uk-text-uppercase"><?php the_title(); ?> </h1>
                                     <?php the_content(); ?>
@@ -137,7 +131,6 @@ get_header(); ?>
 
 
                                 </div>
-                            </div><!--end entry-->
                     <?php endforeach;
                 }
             }

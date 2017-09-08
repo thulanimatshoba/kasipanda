@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Products Slider\n"
+"POT-Creation-Date: 2015-10-25 00:22+0600\n"
+"PO-Revision-Date: 2015-10-25 00:22+0600\n"
+"Last-Translator: Nur Hasan <public.nurhasan@gmail.com>\n"
+"Language-Team: ParaTheme <support@paratheme.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPath-2: templates\n"
+"X-Poedit-SearchPath-3: themes\n"
+
+#: includes/class-settings.php:21 includes/menu/settings.php:45
+msgid "Settings"
+msgstr ""
+
+#: includes/menu/settings.php:33
+msgid "Changes Saved."
+msgstr ""
+
+#: includes/menu/settings.php:56
+msgid "Help"
+msgstr ""
+
+#: includes/menu/settings.php:64
+msgid "Need Help ?"
+msgstr ""
+
+#: includes/menu/settings.php:98
+msgid "Submit Reviews"
+msgstr ""
+
+#: includes/menu/settings.php:99
+msgid ""
+"We are working hard to build some awesome plugins for you and spend thousand "
+"hour for plugins. we wish your three(3) minute by submitting five star "
+"reviews at wordpress.org. if you have any issue please submit at forum."
+msgstr ""
+
+#: includes/menu/settings.php:109
+msgid "Please Share"
+msgstr ""
+
+#: includes/menu/settings.php:110
+msgid "If you like this plugin please share with your social share network."
+msgstr ""
+
+#: includes/menu/settings.php:117
+msgid "Video Tutorial"
+msgstr ""
+
+#: includes/menu/settings.php:118
+msgid "Please watch this video tutorial."
+msgstr ""
+
+#: includes/menu/settings.php:135
+msgid "Save Changes"
+msgstr ""
+
+#: includes/wcps-functions.php:244 includes/wcps-meta.php:182
+msgid "Shortcode"
+msgstr ""
+
+#: includes/wcps-meta.php:13 includes/wcps-meta.php:14
+msgid "WCPS"
+msgstr ""
+
+#: includes/wcps-meta.php:15 includes/wcps-meta.php:16
+#: includes/wcps-meta.php:18
+msgid "New WCPS"
+msgstr ""
+
+#: includes/wcps-meta.php:17
+msgid "Edit WCPS"
+msgstr ""
+
+#: includes/wcps-meta.php:19
+msgid "View WCPS"
+msgstr ""
+
+#: includes/wcps-meta.php:20
+msgid "Search WCPS"
+msgstr ""
+
+#: includes/wcps-meta.php:21
+msgid "Nothing found"
+msgstr ""
+
+#: includes/wcps-meta.php:22
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: includes/wcps-meta.php:60
+msgid "Woocommerce Products Slider Options"
+msgstr ""
+
+#: includes/wcps-meta.php:184
+msgid ""
+"Copy this shortcode and paste on page or post where you want to display "
+"slider. "
+msgstr ""
+
+#: includes/wcps-meta.php:186
+msgid "Use PHP code to your themes file to display slider."
+msgstr ""
+
+#: includes/wcps-meta.php:196
+msgid "Options"
+msgstr ""
+
+#: includes/wcps-meta.php:197
+msgid "Style"
+msgstr ""
+
+#: includes/wcps-meta.php:198
+msgid "Content"
+msgstr ""
+
+#: includes/wcps-meta.php:199
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/wcps-meta.php:205
+msgid "Slider Total Items"
+msgstr ""
+
+#: includes/wcps-meta.php:211
+msgid "Slider Column Number"
+msgstr ""
+
+#: includes/wcps-meta.php:213
+msgid "In Destop: (min:1000px and max)"
+msgstr ""
+
+#: includes/wcps-meta.php:217
+msgid "In Tablet & Small Desktop: (900px max width)"
+msgstr ""
+
+#: includes/wcps-meta.php:222
+msgid "In Mobile: (479px max width)"
+msgstr ""
+
+#: includes/wcps-meta.php:238
+msgid "Slider Auto Play"
+msgstr ""
+
+#: includes/wcps-meta.php:242 includes/wcps-meta.php:258
+#: includes/wcps-meta.php:274 includes/wcps-meta.php:312
+#: includes/wcps-meta.php:328 includes/wcps-meta.php:355
+#: includes/wcps-meta.php:371
+msgid "Active"
+msgstr ""
+
+#: includes/wcps-meta.php:248 includes/wcps-meta.php:264
+#: includes/wcps-meta.php:280 includes/wcps-meta.php:318
+#: includes/wcps-meta.php:334 includes/wcps-meta.php:361
+#: includes/wcps-meta.php:377
+msgid "Inactive"
+msgstr ""
+
+#: includes/wcps-meta.php:254
+msgid "Slider Stop on Hover"
+msgstr ""
+
+#: includes/wcps-meta.php:270
+msgid "Slider Navigation at Top"
+msgstr ""
+
+#: includes/wcps-meta.php:287
+msgid "Slider Navigation Position"
+msgstr ""
+
+#: includes/wcps-meta.php:308
+msgid "Slider Pagination at Bottom"
+msgstr ""
+
+#: includes/wcps-meta.php:324
+msgid "Pagination Number Counting"
+msgstr ""
+
+#: includes/wcps-meta.php:340
+msgid "Slide Speed"
+msgstr ""
+
+#: includes/wcps-meta.php:345
+msgid "Pagination Slide Speed"
+msgstr ""
+
+#: includes/wcps-meta.php:351
+msgid "Slider Touch Drag Enabled"
+msgstr ""
+
+#: includes/wcps-meta.php:367
+msgid "Slider Mouse Drag Enabled"
+msgstr ""
+
+#: includes/wcps-meta.php:386
+msgid "Themes"
+msgstr ""
+
+#: includes/wcps-meta.php:416
+msgid "Slider Ribbon"
+msgstr ""
+
+#: includes/wcps-meta.php:487
+msgid "Background Image"
+msgstr ""
+
+#: includes/wcps-meta.php:591
+msgid "Pagination Background Color"
+msgstr ""
+
+#: includes/wcps-meta.php:597
+msgid "Pagination Text Color"
+msgstr ""
+
+#: includes/wcps-meta.php:617
+msgid "Empty Thumbnail"
+msgstr ""
+
+#: includes/wcps-meta.php:687
+msgid "Query order"
+msgstr ""
+
+#: includes/wcps-meta.php:697
+msgid "Query orderBy"
+msgstr ""
+
+#: includes/wcps-meta.php:721
+msgid "Filter Slider Content."
+msgstr ""
+
+#: includes/wcps-meta.php:724
+msgid "Display from Recent Published"
+msgstr ""
+
+#: includes/wcps-meta.php:725
+msgid "Slider items will query from recent published product."
+msgstr ""
+
+#: includes/wcps-meta.php:728
+msgid "Display from Featured Product"
+msgstr ""
+
+#: includes/wcps-meta.php:730
+msgid "Slider items will query from featured marked product."
+msgstr ""
+
+#: includes/wcps-meta.php:736
+msgid "Display from Only Year"
+msgstr ""
+
+#: includes/wcps-meta.php:738
+msgid "Slider items will query from a year."
+msgstr ""
+
+#: includes/wcps-meta.php:743
+msgid "Display from Month"
+msgstr ""
+
+#: includes/wcps-meta.php:745
+msgid "Slider items will query from Month of a year."
+msgstr ""
+
+#: includes/wcps-meta.php:761
+msgid "Product Items sort."
+msgstr ""
+
+#: includes/wcps-meta.php:805
+msgid "Slider Thumbnail Size"
+msgstr ""
+
+#: includes/wcps-meta.php:817
+msgid "Items thumbnail link's to"
+msgstr ""
+
+#: includes/wcps-meta.php:829
+msgid "Slider thumb max hieght(px)"
+msgstr ""
+
+#: includes/wcps-meta.php:844
+msgid "Items Add to cart button Style"
+msgstr ""
+
+#: includes/wcps-meta.php:845 includes/wcps-meta.php:856
+msgid "You can hide items Add to cart button on slider."
+msgstr ""
+
+#: includes/wcps-meta.php:855
+msgid "Items Add to cart button Display"
+msgstr ""
+
+#: includes/wcps-meta.php:870
+msgid "Items Sale marker display"
+msgstr ""
+
+#: includes/wcps-meta.php:871 includes/wcps-meta.php:942
+msgid "You can hide items featured marker on slider."
+msgstr ""
+
+#: includes/wcps-meta.php:879
+msgid "Custom sale marker icon url"
+msgstr ""
+
+#: includes/wcps-meta.php:895
+msgid "Add to cart Background Color"
+msgstr ""
+
+#: includes/wcps-meta.php:901
+msgid "Add to cart Text Color"
+msgstr ""
+
+#: includes/wcps-meta.php:913
+msgid "Items Title Display"
+msgstr ""
+
+#: includes/wcps-meta.php:914
+msgid "You can hide items title on slider."
+msgstr ""
+
+#: includes/wcps-meta.php:925
+msgid "Items Title Color"
+msgstr ""
+
+#: includes/wcps-meta.php:930
+msgid "Items Title Font Size"
+msgstr ""
+
+#: includes/wcps-meta.php:941
+msgid "Items featured marker display"
+msgstr ""
+
+#: includes/wcps-meta.php:950
+msgid "Featured marker icon"
+msgstr ""
+
+#: includes/wcps-meta.php:963
+msgid "Items Price Display"
+msgstr ""
+
+#: includes/wcps-meta.php:964
+msgid "You can hide items price on slider."
+msgstr ""
+
+#: includes/wcps-meta.php:974
+msgid "Price format on slider"
+msgstr ""
+
+#: includes/wcps-meta.php:988
+msgid "Items Price Color"
+msgstr ""
+
+#: includes/wcps-meta.php:994
+msgid "Items price Font Size"
+msgstr ""
+
+#: includes/wcps-meta.php:1007
+msgid "Star Rating Display"
+msgstr ""
+
+#: includes/wcps-meta.php:1008
+msgid "You can hide star ratings on slider."
+msgstr ""
+
+#: includes/wcps-meta.php:1023
+msgid "Excerpt word count"
+msgstr ""
+
+#: includes/wcps-meta.php:1029
+msgid "Excerpt read more text"
+msgstr ""
+
+#: includes/wcps-meta.php:1043
+msgid "Items category display"
+msgstr ""
+
+#: includes/wcps-meta.php:1044
+msgid "You can hide items category on slider."
+msgstr ""
+
+#: includes/wcps-meta.php:1095
+msgid "Custom CSS for this slider."
+msgstr ""
+
+#: includes/wcps-meta.php:1096
+msgid ""
+"Do not use &lt;style>&lt;/style> tag, you can use bellow prefix to your css, "
+"sometime you need use \"!important\" to overrid."
+msgstr ""
+
+#: templates/wcps-category.php:24
+msgid "Category:"
+msgstr ""
+
+#: templates/wcps-featured.php:22 themes/theme6/index-old.php:128
+msgid "Featured Product"
+msgstr ""
+
+#: templates/wcps-price.php:12
+msgid "Price:"
+msgstr ""
+
+#: templates/wcps-rating.php:16
+msgid "Rated"
+msgstr ""
+
+#: templates/wcps-sale.php:19 themes/theme6/index-old.php:133
+msgid "Sale Product"
+msgstr ""
+
+#: themes/theme1/index-old.php:141 themes/theme1/index.php:94
+#: themes/theme6/index-old.php:172 themes/theme6/index.php:132
+msgid "No Product to Slide"
+msgstr ""

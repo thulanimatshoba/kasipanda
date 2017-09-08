@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+.wcps-container .wcps-theme1 {
+    padding-bottom: 30px;
+    padding-top: 60px
+    }
+
+.wcps-container .owl-carousel .owl-item {
+    padding: 10px 0
+    }
+
+.wcps-container .wcps-theme1 .wcps-items {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  box-shadow: 0 0 2px -1px rgb(153, 153, 153);
+  margin: 0 10px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.wcps-container .wcps-theme1 div.wcps-items div.wcps-items-thumb {
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.wcps-container .wcps-theme1 div.wcps-items div.wcps-items-thumb a {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%
+    }
+
+.wcps-container .wcps-theme1 div.wcps-items div.wcps-items-thumb img {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+    }
+
+.wcps-container .wcps-theme1 .wcps-terms {
+    display: none;
+    padding: 2px 10px 2px 25px;
+    text-align: center
+    }
+
+.wcps-container .wcps-theme1 .wcps-items-title {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.wcps-container .wcps-theme1 .wcps-items-title a {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.wcps-container .wcps-theme1 .wcps-items-excerpt {
+  font-size: 14px;
+  padding: 10px 12px;
+  text-align: left;
+}
+.wcps-container .wcps-theme1 .wcps-items-category {
+  padding: 5px 12px;
+}
+
+.wcps-container .wcps-theme1 .wcps-items-category a {
+  text-decoration: none;
+}
+
+.wcps-container .wcps-theme1 .wcps-items-rating {
+  padding: 5px 12px;
+}
+
+.wcps-container .wcps-theme1 .wcps-items-rating .star-rating{
+	font-size:1.5em;
+}
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-price {
+  padding: 5px 12px;
+  text-align: left;
+}
+
+.wcps-container .wcps-theme1 .wcps-items-price ins {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0)
+    }
+
+.wcps-container .wcps-theme1 .wcps-items-cart {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-cart p {
+    border: medium none !important;
+    margin: 0 !important;
+    padding: 0 !important
+    }
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-cart.custom span.amount {
+    font-size: 15px;
+    line-height: 15px
+    }
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-cart .amount, .wcps-container .wcps-theme1 div.wcps-items div.wcps-items-cart del, .wcps-container .wcps-theme1 div.wcps-items .wcps-items-cart ins, .wcps-container .wcps-theme1 div.wcps-items div.wcps-items-cart .woocommerce-price-suffix {
+    display: none
+    }
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-cart.custom a.add_to_cart_button {
+    background: none repeat scroll 0 0 rgb(13, 225, 133);
+    border: medium none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    padding: 10px 15px;
+    text-shadow: none
+    }
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-cart.custom a.added_to_cart {
+    background: none repeat scroll 0 0 rgb(13, 225, 133);
+    border: medium none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: rgb(68, 68, 68);
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: none
+    }
+
+.wcps-container .wcps-theme1 .wcps-items div.wcps-items-cart a.added {
+    display: none
+    }
+
+.wcps-container .wcps-theme1 .owl-controls .owl-buttons div.owl-prev:hover {
+    background-image: url(images/arrow-prev.png);
+    background-color: #d5d5d5 !important
+    }
+
+.wcps-container .wcps-theme1 .owl-controls .owl-buttons div.owl-next:hover {
+    background-image: url(images/arrow-next.png);
+    background-color: #d5d5d5 !important
+    }
+
+.wcps-container .wcps-theme1 .owl-controls {
+    margin-top: 30px
+    }
