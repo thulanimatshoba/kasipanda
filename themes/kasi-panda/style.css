@@ -465,7 +465,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: #666;
-	border: 1px solid #42b773;
+	border: 1px solid #1b30ca;
 	border-radius: 3px;
 	padding: 3px;
 }
@@ -504,7 +504,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #42b773 !important;
+	color: #1b30ca !important;
 }
 
 a:visited {
@@ -549,6 +549,7 @@ a:active {
 	display: block;
 	text-decoration: none;
 	padding: 10px;
+	text-transform: uppercase;
 }
 
 
@@ -909,7 +910,7 @@ if it's not present, don't show loader */
 #masthead.sticky {
     z-index: 999;
     top: 0;
-    background: #42b773;
+    background: #1b30ca;
     box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.54);
 }
 
@@ -934,7 +935,7 @@ header#masthead {
 .main-navigation li a:after {
     content: '';
     position: absolute;
-    background: #42b773;
+    background: #1b30ca;
     height: 2px;
     width: 0%;
     transform: translateX(-50%);
@@ -963,7 +964,7 @@ header#masthead {
 button.menu-toggle {
     border: 0;
     border-radius: 0;
-    background: #42b773;
+    background: #1b30ca;
     color: white;
     padding: 10px;
     margin: 3px 0;
@@ -992,11 +993,11 @@ button.menu-toggle {
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
     border-radius: 0px !important;
     color: #fff !important;
-    background-color: #42b773 !important;
+    background-color: #1b30ca !important;
 }
 
 .woocommerce-product-gallery__image {
-    border: 1px solid #42b773;
+    border: 1px solid #1b30ca;
 }
 
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
@@ -1004,11 +1005,19 @@ button.menu-toggle {
 }
 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
-    background-color: #42b773 !important;
+    background-color: #1b30ca !important;
 }
 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
     background-color: #456b53 !important;
+}
+
+a.checkout-button.button.alt.wc-forward br {
+	display: none;
+}
+
+.woocommerce ul.products li.product .price {
+	color: #1b30ca !important;
 }
 
 /** Sidebar **/
@@ -1021,7 +1030,7 @@ aside#secondary {
 
 select.dropdown_layered_nav_color, select.dropdown_product_cat {
     width: 100%;
-    border-color: #42b773;
+    border-color: #1b30ca;
     padding: 5px;
 }
 
@@ -1060,15 +1069,43 @@ nf-field:last-child {
     color: #000;
 }
 
+input#nf-field-4 {
+	background: #1b30ca;
+	border: 0;
+	padding: 15px 40px;
+	border-radius: 0;
+	color: #fff;
+	cursor: pointer;
+}
+
 .select2-container--default .select2-selection--single {
 	border-radius: 0;
-	  border-color: #42b773;
+	  border-color: #1b30ca;
 }
 
 aside#secondary h2.widget-title {
     text-transform: uppercase;
     font-size: 20px;
     border-bottom: 1px solid rgba(0, 128, 0, 0.05);
+}
+
+/** Featured Products **/
+
+.featured-products {
+	background: #1b30ca;
+}
+
+.wcps-container {
+	background: transparent !important;
+}
+
+.wcps-items-excerpt {
+	display: none !important;
+}
+
+button.uk-button {
+	border-radius: 0 !important;
+	background: #fff;
 }
 
 
@@ -1083,6 +1120,40 @@ footer#colophon {
 footer#colophon a {
 	color: white !important;
 }
+
+#topcontrol .fa {
+	background: #42464F none repeat scroll 0px 0px;
+	border-radius: 50%;
+	bottom: 40px;
+	box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
+	color: #FFF;
+	font-size: 40px;
+	height: 50px;
+	line-height: 45px;
+	overflow: hidden;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	width: 50px;
+	z-index: 999;
+	background-size: 100% 200% !important;
+	position: relative !important;
+	background-image: linear-gradient(to bottom, #d811c2 50%, #FFF 50%) !important;
+}
+
+#topcontrol .fa:hover {
+	background: #d811c2 none repeat scroll 0 0;
+	color: #d811c2;
+	text-decoration: none;
+	background: #d811c2;
+	background-position: -200% 100% !important;
+}
+
 
 
 /** Media Queries **/

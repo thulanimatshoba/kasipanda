@@ -99,7 +99,7 @@ function kasi_panda_widgets_init() {
 		'name'          => esc_html__( 'Home Page Slider', 'kasi-panda' ),
 		'id'            => 'home-slider',
 		'description'   => esc_html__( 'Add widgets here.', 'kasi-panda' ),
-		'before_widget' => '<section id="%1$s" class="uk-width-1-1 widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="uk-width-1-1 %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
