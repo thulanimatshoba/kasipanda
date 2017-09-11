@@ -971,6 +971,12 @@ button.menu-toggle {
 		float: right;
 }
 
+.menu-toggle::before {
+	content: '\f0c9';
+	font-family: FontAwesome;
+	margin-right: 3px;
+}
+
 #masthead.sticky button.menu-toggle {
 	background: #000;
 }
@@ -1105,7 +1111,45 @@ aside#secondary h2.widget-title {
 
 button.uk-button {
 	border-radius: 0 !important;
-	background: #fff;
+
+	background: #42464F none repeat scroll 0px 0px;
+	border-radius: 50%;
+	bottom: 40px;
+	box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
+	color: #FFF;
+	overflow: hidden;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	background-size: 100% 200% !important;
+	position: relative !important;
+	background-image: linear-gradient(to bottom, #1b30ca 50%, #FFF 50%) !important;
+}
+
+.uk-button a {
+	color: #fff !important;
+}
+
+button.uk-button:hover a {
+	color: #1b30ca !important;
+}
+
+
+button.uk-button:hover {
+	background: #1b30ca none repeat scroll 0 0;
+	color: #1b30ca !important;
+	text-decoration: none;
+	background: #1b30ca;
+	background-image: none;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-size: auto auto;
+	background-position: -200% 100% !important;
 }
 
 
@@ -1143,14 +1187,14 @@ footer#colophon a {
 	z-index: 999;
 	background-size: 100% 200% !important;
 	position: relative !important;
-	background-image: linear-gradient(to bottom, #d811c2 50%, #FFF 50%) !important;
+	background-image: linear-gradient(to bottom, #1b30ca 50%, #FFF 50%) !important;
 }
 
 #topcontrol .fa:hover {
-	background: #d811c2 none repeat scroll 0 0;
-	color: #d811c2;
+	background: #1b30ca none repeat scroll 0 0;
+	color: #1b30ca;
 	text-decoration: none;
-	background: #d811c2;
+	background: #1b30ca;
 	background-position: -200% 100% !important;
 }
 

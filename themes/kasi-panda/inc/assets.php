@@ -127,6 +127,9 @@ function kasi_panda_scripts() {
 
 	wp_enqueue_style( 'kasi-panda-uikit-min', get_stylesheet_directory_uri() . '/css/uikit.min.css', array( 'kasi-panda-style' ), '20170716' );
 
+    //Enqueue Font Awesome
+    wp_enqueue_style( 'font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
+
 	wp_enqueue_style( 'kasi-panda-uikit', get_stylesheet_directory_uri() . '/css/uikit.css', array( 'kasi-panda-style' ), '20170716' );
 
 	wp_enqueue_script( 'kasi-panda-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
