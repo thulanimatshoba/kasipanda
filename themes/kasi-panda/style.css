@@ -1,6 +1,5 @@
 /*
 Theme Name: Kasi Panda
-Theme URI: http://underscores.me/
 Author: Thulani Matshoba
 Author URI: http://thulanimatshoba.co.za
 Description: This is a custom theme for Kasi Panda bro... and its lit as fuck
@@ -892,6 +891,10 @@ object {
 }
 
 /** Thulani **/
+
+::selection {
+    background: #1b30ca;
+}
 
 /* This only works with JavaScript,
 if it's not present, don't show loader */
