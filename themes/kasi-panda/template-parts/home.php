@@ -30,7 +30,7 @@ get_header(); ?>
         <div id="about" class="uk-width-1-1">
             <div class="uk-height uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200"
                  style="background-image: url('wp-content/themes/kasi-panda/img/wha-we-do-bg.jpg');">
-                <div class="uk-container-center uk-container uk-width-1-1">
+                <div class="uk-container">
                     <?php
                     if (is_page()) {
                         $cat = get_cat_ID('About'); //use page title to get a category ID

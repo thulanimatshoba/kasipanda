@@ -14,9 +14,14 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer">
-    <div class="site-info uk-container">
+    <div class="site-info uk-container uk-position-relative uk-flex uk-flex-middle uk-flex-space-between">
         <a class="uk-float-left" href="<?php echo esc_url(__('https://kasipanda.co.za/', 'kasi-panda')); ?>"><?php  printf(esc_html__('All rights reserved	&copy; 2017 %s', 'kasi-panda'), 'Kasi Panda'); ?>
         </a>
+
+        <div class="uk-float-left">
+        <?php get_template_part('inc/socials/socials'); ?>
+        </div>
+
         <span class="uk-float-right">
 			<?php printf(esc_html__('Developed by %2$s', 'kasi-panda'), 'kasi-panda', '<a href="http://thulanimatshoba.co.za">Thulani Matshoba</a>'); ?>
         </span>
