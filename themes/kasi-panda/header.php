@@ -35,6 +35,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kasi-panda' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<div id="top-socials">
+			<div class="uk-container">
+				        <div class="uk-float-right">
+        <?php get_template_part('inc/socials/socials'); ?>
+        </div>
+    </div>
+</div>
 		<div class="uk-container uk-margin-top uk-margin-bottom">
 		<div class="site-branding uk-float-left">
 			<?php

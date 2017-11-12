@@ -121,7 +121,7 @@ get_header(); ?>
 
         <div id="contacts" class="uk-width-1-1">
             <div class="uk-background-cover" uk-parallax="bgy: -200"
-                 style="background-image: url('wp-content/themes/kasi-panda/img/contact-bg.jpg');">
+                 style="background-image: url('wp-content/themes/kasi-panda/img/table-mountain.jpg');">
                 <div class="uk-container">
                     <?php
                     if (is_page()) {
@@ -155,32 +155,32 @@ get_footer();
 ?>
 
 
-<div class="span4 ">
-
-        <div class="service-box extraservice_1 col1">
-            <div class="extrabox">
-                <figure class="icon">
-                    <strong>
-                        <img src="https://livedemo00.template-help.com/wordpress_54036/wp-content/themes/theme54036/images/icon1.png" alt="">
-                    </strong>
-                </figure>
-            </div>
-            <div class="service-box_body">
-                <h2 class="title">
-                    <a href="https://livedemo00.template-help.com/wordpress_54036/uncategorized/aliquam-erat-volutpat/" title="Porcelain Veneers" target="_self">Porcelain Veneers</a>
-                </h2>
-                <h5 class="sub-title">
-                    Lorem ipsum dolor sit amet, lorem
-                </h5>
-                <div class="service-box_txt">
-                    Consec tetuer adipicing it. Praesebul lorem ipsum.<br>
-                    <em>S natoque penatibus et gnis dent monteiculu.</em>
-                </div>
-                <div class="btn-align">
-                    <a href="https://livedemo00.template-help.com/wordpress_54036/uncategorized/aliquam-erat-volutpat/" title="more info" class="btn btn-inverse btn-normal btn-primary " target="_self">more
-                        info</a>
-                </div>
-            </div>
-        </div><!-- /Service Box -->
-
-</div>
+<!--<div class="span4 ">-->
+<!---->
+<!--        <div class="service-box extraservice_1 col1">-->
+<!--            <div class="extrabox">-->
+<!--                <figure class="icon">-->
+<!--                    <strong>-->
+<!--                        <img src="https://livedemo00.template-help.com/wordpress_54036/wp-content/themes/theme54036/images/icon1.png" alt="">-->
+<!--                    </strong>-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--            <div class="service-box_body">-->
+<!--                <h2 class="title">-->
+<!--                    <a href="https://livedemo00.template-help.com/wordpress_54036/uncategorized/aliquam-erat-volutpat/" title="Porcelain Veneers" target="_self">Porcelain Veneers</a>-->
+<!--                </h2>-->
+<!--                <h5 class="sub-title">-->
+<!--                    Lorem ipsum dolor sit amet, lorem-->
+<!--                </h5>-->
+<!--                <div class="service-box_txt">-->
+<!--                    Consec tetuer adipicing it. Praesebul lorem ipsum.<br>-->
+<!--                    <em>S natoque penatibus et gnis dent monteiculu.</em>-->
+<!--                </div>-->
+<!--                <div class="btn-align">-->
+<!--                    <a href="https://livedemo00.template-help.com/wordpress_54036/uncategorized/aliquam-erat-volutpat/" title="more info" class="btn btn-inverse btn-normal btn-primary " target="_self">more-->
+<!--                        info</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div><!-- /Service Box -->
+<!---->
+<!--</div>-->

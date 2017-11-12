@@ -45,6 +45,52 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@font-face {
+	font-family: 'exoregular';
+	src: url('fonts/exo-regular-webfont.eot');
+	src: url('fonts/exo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/exo-regular-webfont.woff') format('woff'),
+	url('fonts/exo-regular-webfont.ttf') format('truetype'),
+	url('fonts/exo-regular-webfont.svg#exoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'exoextrabold';
+	src: url('fonts/exo-extrabold-webfont.eot');
+	src: url('fonts/exo-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/exo-extrabold-webfont.woff') format('woff'),
+	url('fonts/exo-extrabold-webfont.ttf') format('truetype'),
+	url('fonts/exo-extrabold-webfont.svg#exoextrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'exoblack';
+	src: url('fonts/exo-black-webfont.eot');
+	src: url('fonts/exo-black-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/exo-black-webfont.woff') format('woff'),
+	url('fonts/exo-black-webfont.ttf') format('truetype'),
+	url('fonts/exo-black-webfont.svg#exoblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=4.2.0');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+	url('fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),
+	url('fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),
+	url('fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -269,12 +315,8 @@ textarea {
 	font: 400 13px/23px "Ubuntu",sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
+	font-family: exoregular !important;
 	clear: both;
 }
 
@@ -917,6 +959,10 @@ if it's not present, don't show loader */
     box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.54);
 }
 
+#masthead.sticky #top-socials {
+    display: none;
+}
+
 header#masthead {
     box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.17);
 }
@@ -931,6 +977,21 @@ header#masthead {
 
 #masthead.sticky .main-navigation .current_page_item > a:after, #masthead.sticky .main-navigation .current-menu-item > a:after {
     background: #fff;
+}
+
+#masthead.sticky .site-branding .site-title a {
+	color: #fff !important;
+}
+
+.site-branding .site-title {
+	font-size: 25px;
+	font-family: exoregular !important;
+}
+
+#top-socials {
+    background: #000;
+    display: block;
+    padding: 5px;
 }
 
 /** Navigation **/
@@ -997,6 +1058,12 @@ button.menu-toggle {
     width: 100%;
 }
 
+.wk-slideshow img { width: 100% !important;}
+.wk-slideshow-default .nav { margin-top: -30px !important; z-index: 999 !important; position: relative; margin-bottom: 9px !important;}
+.slider .widget { margin: 0 !important;}
+.wk-slideshow-default > div:hover .next, .wk-slideshow-default > div:hover .prev { background: url("img/buttons.png") !important; z-index:6;}
+.wk-slideshow-default > div:hover .next  { background-position: 0px -50px !important;}
+
 /** Woocommerce **/
 
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
@@ -1053,14 +1120,14 @@ a.checkout-button.button.alt.wc-forward br {
 	content: counter(num,decimal-leading-zero);
 	counter-increment: num;
 	position: absolute;
-	color: rgba(101,137,151,0.33);
+	color: rgb(27, 49, 202);
 	width: 40px;
 	height: 40px;
 	letter-spacing: -2px;
 	/* -webkit-border-radius: 50%; */
 	-moz-border-radius: 50%;
 	/* border-radius: 50%; */
-	border: 3px solid rgba(101,137,151,0.23);
+	border: 3px solid rgb(27, 49, 202);
 	font-size: 35px;
 	font-weight: 400;
 	top: 0px;
@@ -1073,6 +1140,9 @@ a.checkout-button.button.alt.wc-forward br {
 	transition: 0.3s;
 }
 
+#services ul li:hover #services ul li::before {
+	background: #000 !important;
+}
 /** Sidebar **/
 
 aside#secondary {
@@ -1095,11 +1165,48 @@ select.dropdown_layered_nav_color, select.dropdown_product_cat {
 
 /** Team **/
 
-.uk-thumbnail.uk-thumbnail-mini.uk-float-left.uk-margin-small-right img {
-    width: 120px;
+#team .uk-thumbnail.uk-thumbnail-mini.uk-float-left.uk-margin-small-right img {
+	width: 120px;
+}
+
+#team img.uk-border-circle {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+
+}
+
+#team img.uk-border-circle:hover {
+    opacity: 0.6;
+    border: 2px solid #1b31ca;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-transition: all 0.4s cubic-bezier(1, -0.79, 0.79, 0.79) 0s;
+    -moz-transition: all 0.4s cubic-bezier(1, -0.79, 0.79, 0.79) 0s;
+    -o-transition: all 0.4s cubic-bezier(1, -0.79, 0.79, 0.79) 0s;
+    -ms-transition: all 0.4s cubic-bezier(1, -0.79, 0.79, 0.79) 0s;
+    transition: all 0.4s cubic-bezier(1, -0.79, 0.79, 0.79) 0s;
+    transform: scale(1.1);
 }
 
 /** Contacts **/
+
+#contacts h1.uk-article-title {
+	color: #fff;
+}
 
 nf-field:nth-child(1), nf-field:nth-child(2), nf-field:nth-child(3), nf-field:nth-child(4) {
     width: 50%;
@@ -1119,7 +1226,7 @@ nf-field:last-child {
     border-radius: 0;
     padding: 5px;
     background: transparent;
-    color: #000;
+    color: #fff;
 }
 
 input#nf-field-4 {
@@ -1140,6 +1247,11 @@ aside#secondary h2.widget-title {
     text-transform: uppercase;
     font-size: 20px;
     border-bottom: 1px solid rgba(0, 128, 0, 0.05);
+}
+
+#team h4 {
+	margin: 0;
+	color: #1b30ca;
 }
 
 /** Featured Products **/
@@ -1199,6 +1311,22 @@ button.uk-button:hover {
 	background-position: -200% 100% !important;
 }
 
+.woocommerce-message::before {
+	color: #1b30ca !important;
+}
+
+.woocommerce-message {
+	border-top-color: #1b30ca !important;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce div.product .stock {
+	color: #1b30ca !important;
+}
+
+.woocommerce span.onsale {
+	background-color: #1b30ca !important;
+}
+
 
 
 /** Footer **/
@@ -1211,6 +1339,36 @@ footer#colophon {
 footer#colophon a {
 	color: white !important;
 }
+
+.fa-facebook-f:before, .fa-facebook:before, .fa-twitter:before, .fa-whatsapp:before, .fa-print:before {
+	font-size: 20px;
+}
+
+.fa-whatsapp:before {
+ 	color: #34AF23;
+}
+
+.fa-facebook:before {
+	color: #3B5998;
+}
+
+.facebook:hover, .twitter:hover, .printer:hover {
+	text-decoration: none;
+	background: red !important;
+
+}
+
+.facebook, .twitter, .printer {
+	background: rgba(23, 18, 18, 0.57) !important;
+}
+
+.fa-print:before {
+    content: "\f02f";
+    margin: 7px 0px 0px 9px;
+    position: absolute;
+}
+
+
 
 #topcontrol .fa {
 	background: #42464F none repeat scroll 0px 0px;
@@ -1259,7 +1417,7 @@ footer#colophon a {
 #primary-menu {
     float: left;
     width: 100%;
-		margin: 10px 0;
+	margin: 10px 0;
 }
 
 .main-navigation li {
@@ -1275,296 +1433,3 @@ footer#colophon a {
     margin-top: 0 !important;
 }
 }
-
-
-/************** END **************/
-
-.span4 {
-	width: 370px;
-}
-
-.lazy-load-box {
-	opacity: 1;
-	-moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-	-o-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-	-ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-	transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-}
-
-col1 {
-	background: #eeecbb;
-	background: -moz-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#eeecbb),color-stop(100%,#e1de89));
-	background: -webkit-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: -o-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: -ms-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: linear-gradient(to bottom,#eeecbb 0%,#e1de89 100%);
-	background-color: rgba(0, 0, 0, 0);
-	//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeecbb',endColorstr='#e1de89',GradientType=0);
-}
-
-
-.service-box {
-	overflow: hidden;
-	min-height: 20px;
-	padding: 19px;
-	margin-bottom: 0;
-	background: #eeecbb;
-	background: -moz-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#eeecbb),color-stop(100%,#e1de89));
-	background: -webkit-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: -o-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: -ms-linear-gradient(top,#eeecbb 0%,#e1de89 100%);
-	background: linear-gradient(to bottom,#eeecbb 0%,#e1de89 100%);
-	background-color: rgba(0, 0, 0, 0);
-//filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeecbb',endColorstr='#e1de89',GradientType=0);
-	border: 1px solid #DDD;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
-}
-
-.service-box::before {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	content: "";
-	display: block;
-	border-radius: 0;
-	border: 0 solid #333;
-	background: transparent;
-	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease;
-	-o-transition: all 0.8s ease;
-	transition: all 0.8s ease;
-}
-
-.service-box {
-	text-align: center;
-}
-
-.service-box .icon {
-	position: relative;
-	width: 112px;
-	height: 112px;
-	line-height: 112px !important;
-	text-align: center;
-	font-size: 50px;
-	font-weight: normal;
-	color: #ffffff;
-	float: none;
-	overflow: hidden;
-	border-radius: 500px;
-	margin: 0;
-	border: none;
-	display: block;
-	margin: 0 auto;
-	transform: rotateY(0deg);
-	-webkit-transform: rotateY(0deg);
-	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease;
-	-o-transition: all 0.8s ease;
-	transition: all 0.8s ease;
-}
-.col1 .icon {
-	background: #e0deab;
-}
-
-.col1 .icon:hover {
-	background: #fff;
-}
-
-.service-box .icon {
-	margin: 0px auto 15px;
-	text-align: center;
-}
-
-.service-box:hover .icon {
-	background: #fff;
-	color: #fff;
-	transform: rotateY(360deg);
-	-webkit-transform: rotateY(360deg);
-	-webkit-transition: all 0.9s ease;
-	-moz-transition: all 0.9s ease;
-	-o-transition: all 0.9s ease;
-	transition: all 0.9s ease;
-}
-
-
-.service-box .icon::before {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	content: "";
-	display: block;
-	border-radius: 500px;
-	border: 0px solid #333;
-	background: transparent;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-.service-box:hover .icon:before {
-	position: absolute;
-	left: 4px;
-	right: 4px;
-	top: 4px;
-	bottom: 4px;
-	content: "";
-	border: 4px solid #9de9bc;
-	background: transparent;
-	-webkit-transition: all 0.7s ease;
-	-moz-transition: all 0.7s ease;
-	-o-transition: all 0.7s ease;
-	transition: all 0.7s ease;
-}
-
-.service-box .icon strong {
-	width: 112px;
-	height: 112px;
-	position: absolute;
-	display: block;
-	border-radius: 400px;
-	text-align: center;
-	margin: 0 auto;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-
-.service-box .icon img {
-	position: absolute;
-	display: block;
-	border-radius: 400px;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	right: 0;
-	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease;
-	-o-transition: all 0.8s ease;
-	transition: all 0.8s ease;
-}
-
-.service-box:hover .icon img {
-	position: absolute;
-	top: -112px;
-	-webkit-transition: all 0.6s ease;
-	-moz-transition: all 0.6s ease;
-	-o-transition: all 0.6s ease;
-	transition: all 0.6s ease;
-}
-
-.service-box .icon span {
-	display: none;
-}
-
-/*
-Button
- */
-
-.service-box .btn-align {
-	text-align: center;
-	position: relative;
-	bottom: 0;
-	left: 0px;
-}
-
-.btn.btn-primary {
-	font-family: 'Racing Sans One',cursive;
-	font-size: 14px;
-	line-height: 18px;
-	font-weight: 400;
-	font-style: normal;
-	text-transform: uppercase;
-	color: #474747;
-	padding: 7px 13px 9px;
-	position: relative;
-	letter-spacing: 0;
-	background: transparent;
-	border-radius: 0;
-	box-shadow: none;
-	text-shadow: none;
-	border: none;
-	outline: none;
-	border-radius: 4px;
-	z-index: 1;
-	overflow: hidden;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-
-.btn.btn-primary:hover {
-	color: #fff;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-
-.btn.btn-primary:before {
-	content: "";
-	position: absolute;
-	width: 0;
-	height: 100%;
-	bottom: 0;
-	right: 0;
-	top: 0;
-	z-index: -1;
-	overflow: hidden;
-	border-radius: 5px;
-	background: #5e5c5b;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-}
-
-.btn.btn-primary:hover:before {
-	width: 100%;
-	left: 0;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-.btn.btn-primary:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	bottom: 0;
-	left: 0;
-	overflow: hidden;
-	border-radius: 5px;
-	background: #f8f8f8;
-	z-index: -2;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-
-.btn.btn-primary:hover:after {
-	background: #5e5c5b;
-	-webkit-transition: all 0.8s ease;
-	-moz-transition: all 0.8s ease;
-	-o-transition: all 0.8s ease;
-	transition: all 0.8s ease;
-}
-
-
