@@ -125,12 +125,20 @@ add_action( 'widgets_init', 'kasi_panda_widgets_init' );
 function kasi_panda_scripts() {
 	wp_enqueue_style( 'kasi-panda-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'kasi-panda-uikit-min', get_stylesheet_directory_uri() . '/css/uikit.min.css', array( 'kasi-panda-style' ), '20170716' );
+	wp_enqueue_style( 'kasi-panda-uikit-min', get_stylesheet_directory_uri() . '/css/uikit.min.css', array( 'kasi-panda-style' ), '2.26.1' );
 
     //Enqueue Font Awesome
     wp_enqueue_style( 'font-awesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 
-	wp_enqueue_style( 'kasi-panda-uikit', get_stylesheet_directory_uri() . '/css/uikit.css', array( 'kasi-panda-style' ), '20170716' );
+	wp_register_script( 'uikit', '//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/core/core.min.js', [], '2.26.1' );
+    wp_register_script( 'uikit-navbar', '//cdnjs.cloudflare.com/ajax/libs/uikit/2.26.1/js/core/nav.min.js', [ 'uikit' ], '2.26.1' );
+    wp_register_script( 'uikit-toggle', '//cdnjs.cloudflare.com/ajax/libs/uikit/2.26.1/js/core/toggle.min.js', [ 'uikit' ], '2.26.1' );
+    wp_register_script( 'uikit-offcanvas', '//cdnjs.cloudflare.com/ajax/libs/uikit/2.26.1/js/core/offcanvas.min.js', [ 'uikit' ], '2.26.1' );
+
+    wp_enqueue_script( 'uikit-navbar' );
+    wp_enqueue_script( 'uikit-toggle' );
+    wp_enqueue_script( 'uikit-offcanvas' );
+
 
 	wp_enqueue_script( 'kasi-panda-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -138,9 +146,9 @@ function kasi_panda_scripts() {
 
 	wp_enqueue_script( 'kasi-panda-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'kasi-panda-uikit-min', get_template_directory_uri() . '/js/uikit.min.js', array(), '20170716', true );
+	//wp_enqueue_script( 'kasi-panda-uikit-min', get_template_directory_uri() . '/js/uikit.min.js', array(), '20170716', true );
 
-	wp_enqueue_script( 'kasi-panda-uikit', get_template_directory_uri() . '/js/uikit.js', array(), '20170716', true );
+	//wp_enqueue_script( 'kasi-panda-uikit', get_template_directory_uri() . '/js/uikit.js', array(), '20170716', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

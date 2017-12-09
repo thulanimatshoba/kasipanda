@@ -141,6 +141,7 @@ a {
 a:active,
 a:hover {
 	outline: 0;
+	text-decoration: none !important;
 }
 
 abbr[title] {
@@ -1140,9 +1141,28 @@ a.checkout-button.button.alt.wc-forward br {
 	transition: 0.3s;
 }
 
-#services ul li:hover #services ul li::before {
-	background: #000 !important;
+#services ul li:hover::before {
+	background: rgb(27, 49, 202);
+	color: #fff;
 }
+
+#services ul li:hover h3 {
+	color: rgb(27, 49, 202);
+	font-weight: bold;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+} 
+
+#services ul li h3 {
+    margin-bottom: 5px;
+}
+
+#services ul li p {
+    margin-top: 0;
+}
+
 /** Sidebar **/
 
 aside#secondary {
